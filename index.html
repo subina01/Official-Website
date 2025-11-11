@@ -1,240 +1,414 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subina - Backend Developer</title>
+    <style src="~/Index.css"></style>
+</head>
+<body>
+    <div class="bg-animation"></div>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SUBINA</div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-label">AVAILABLE FOR OPPORTUNITIES</span>
+            <h1>
+                <span class="wave">👋</span> Hi, I'm <span class="gradient-text">Subina</span>
+            </h1>
+            <p class="subtitle">Backend Developer & Problem Solver</p>
+            <p class="description">
+                I craft scalable backend solutions using ASP.NET Core, FastAPI, and modern technologies. 
+                Passionate about clean architecture, SOLID principles, and building systems that make a difference.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Explore My Work</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Let's Connect</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Subina Dhakal</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-       <nav class="nav container">
-       <a href="index.html" class="nav__logo">Subina</a> 
-
-       <div class="nav__menu" id="nav-menu">
-         <ul class="nav__list">
-            <li class="nav__item">
-               <a href="index.html" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-               <a href="about.html" class="nav__link">About Me</a>
-            </li>
-            <li class="nav__item">
-               <a href="work.html" class="nav__link">Portfolio</a>
-            </li>
-            <li class="nav__item">
-               <a href="contact.html" class="button">Contact Me</a>
-            </li>
-         </ul>
-         <!--close button-->
-         <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-         </div>
-
-       </div>
-
-       <div class="nav__actions">
-         <!--Theme-->
-         <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-
-         <!--Toggle-->
-         <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-apps-2-line"></i>
-         </div>
-
-
-       </div>
-      </nav> 
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section">
-           <div class="home__rectangle">
-            <div class="home__container container grid">
-               <div class="home__perfil perfil">
-                <div class="perfil__content">
-                  <img src="assets/img/home-subina.png" alt="image" class="perfil__image">
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <span class="section-label">Career Journey</span>
+            <h2><span class="gradient-text">Experience</span></h2>
+            <p class="section-description">Building expertise through hands-on development and real-world projects</p>
+        </div>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="exp-header">
+                    <div>
+                        <h3 class="exp-title">Backend Developer</h3>
+                        <p class="exp-company">Avenir Tech · Internship</p>
+                    </div>
+                    <span class="exp-duration">Nov 2024 - May 2025</span>
                 </div>
-               </div>
-               <div class="home__content grid">
-               <div class="home__data grid">
-                  <h1 class="home__name">
-                     Subina Dhakal
-                  </h1><br><br><br>
-                  <h2 class="home__profession">.Net Developer</h2>
+                <ul class="exp-list">
+                    <li>Developed backend web applications using ASP.NET WebAPI, FastAPI and SQLModel, contributing to scalable and efficient system design</li>
+                    <li>Participated in real-world projects focusing on Clean Architecture, SOLID principles, and modular code structure</li>
+                    <li>Designed and built RESTful APIs, integrated PostgreSQL databases, and implemented features such as authentication, data validation, and error handling</li>
+                    <li>Gained practical experience in using GitLab and GitHub for version control and collaborative development</li>
+                    <li>Collaborated with a team to deliver maintainable, production-ready code following agile development practices</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                  <div class="home__social">
-                     <a href="https://github.com/" target="_blank" class="home__social-link">
-                        <i class="ri-github-fill"></i>
-
-                     </a>
-                     <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
-                        <i class="ri-linkedin-box-fill"></i>
-
-                     </a>
-                     <a href="" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-fill"></i>
-
-                     </a>
-                  </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2><span class="gradient-text">Featured Projects</span></h2>
+            <p class="section-description">A showcase of my development work across various technologies</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <span class="project-number">01</span>
+                <h3 class="project-title">Finance App</h3>
+                <p class="project-description">
+                    Comprehensive finance management application with expense tracking, budget planning, and goal setting features.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">PostgreSQL</span>
                 </div>
-
-                <a href="assets/pdf/Subina dhakal.pdf" download="" class="home__button button">Download CV</a>
-               </div>
-              </div>
-            </div>
-         </section><br><Br><br><br><Br><br><br><Br><br><br><Br><br><br><Br><br><br><Br><br>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-            <h2 class="section__title">
-               The Services I Offer
-            </h2>
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <i class="ri-code-s-slash-line services__icon"></i>
-                  <h2 class="services__title">
-                     Web Developer
-                  </h2>
-                  <p class="services__description">
-                     Beautiful and elegant designs with interfaces that are intuitive, efficient and pleasant to use for the user.
-                  </p>
-
-                  <button class="services__button button">Know More
-
-                  </button>
-                   <div class="services__modal">
-                  <div class="services__modal-content">
-                     <i class="ri-close-line services__modal-close"></i>
-
-                     <h2 class="services__modal-title">
-                        Web Developer
-                     </h2>
-
-                     <ul class="services__modal-list grid">
-                        <li class="services__modal-title">
-                           Create professional and quality Websites at the clients request
-                        </li>
-                        <li class="services__modal-title">
-                           I do Web Design in Prototypes
-                        </li>
-                        <li class="services__modal-title">
-                           I position you website with advance SEO.
-                        </li>
-                        <li class="services__modal-title">
-                           I solve performance problems on web pages.
-                        </li>
-                     </ul>
-                     </div>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== WORK ====================-->
-         <section class="work section">
-            <h2 class="section__title">
-               My Most<br>
-               Recent Works
-            </h2>
-            
-
-            <div class="work__container container grid">
-               <article class="work__card">
-                  <a href="" class="work__link">
-                     <img src="assets/img/work-1.png" alt="image" class="work__img">
-                     <i class="ri-arrow-right-circle-line work__icon"></i>
-                  </a>
-
-                  <h2 class="work__title">Creative Website</h2>
-                  <span class="work__subtitle">
-                     Website Design
-                  </span>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section">
-           <div class="contact__container container grid">
-            <h2 class="section__title">
-               Let's Talk<br>
-               About Your Project
-            </h2>
-
-            <a href="contact.html" class="contact__button button">Contact Me</a>
-           </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-
-         <div class="footer__container container grid">
-            <div class="footer__container grid">
-               <a href="index.html" class="footer__logo">Subina</a>
-
-               <ul class="footer__links">
-                  <li>
-                     <a href="about.html" class="footer__link">About Me</a>
-                  </li>
-                  <li>
-                     <a href="work.html" class="footer__link">Portfolio</a>
-                  </li>
-
-                  <li>
-                     <a href="contact.html" class="footer__link">Contact Me</a>
-                  </li>
-               </ul>
-
-               <div class="footer__social">
-                  <a href="https://www.facebook.com/" target= "_blank" class="footer__social-link">
-                     <i class="ri-facebook-circle-fill"></i>
-                  </a>
-                  <a href="https://www.instagram.com/" target= "_blank" class="footer__social-link">
-                     <i class="ri-instagram-fill"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/subinadhakal01/" target= "_blank" class="footer__social-link">
-                     <i class="ri-linkedin-box-fill"></i>
-                  </a>
-               </div>
+                <a href="https://github.com/subina01/Finance-app-" target="_blank" class="project-link">
+                    View Project →
+                </a>
             </div>
 
-            <span class="footer__copy">
-               &#169; All Rights Reserved By Subina 
-            </span>
-         </div>
-      </footer>
+            <div class="project-card">
+                <span class="project-number">02</span>
+                <h3 class="project-title">COVID-19 Trend Analysis</h3>
+                <p class="project-description">
+                    Data science project analyzing pandemic trends with interactive visualizations and predictive models.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Data Science</span>
+                    <span class="tech-tag">Machine Learning</span>
+                </div>
+                <a href="https://github.com/subina01/Covid19_trend_Analysis-Data-Science-Project-" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
 
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
+            <div class="project-card">
+                <span class="project-number">03</span>
+                <h3 class="project-title">TranslateGPT</h3>
+                <p class="project-description">
+                    AI-powered translation application leveraging GPT technology for accurate and contextual language translation.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">GPT API</span>
+                    <span class="tech-tag">ASP.NET</span>
+                </div>
+                <a href="https://github.com/subina01/TranslateGPT" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
 
-         <i class="ri-arrow-up-line"></i>
-      </a>
+            <div class="project-card">
+                <span class="project-number">04</span>
+                <h3 class="project-title">Design Patterns</h3>
+                <p class="project-description">
+                    Implementation of software design patterns demonstrating best practices and architectural principles in .NET.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Architecture</span>
+                </div>
+                <a href="https://github.com/subina01/DesignPatterns" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+            <div class="project-card">
+                <span class="project-number">05</span>
+                <h3 class="project-title">Machine Learning Programs</h3>
+                <p class="project-description">
+                    Collection of ML algorithms and models showcasing various machine learning techniques and implementations.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                </div>
+                <a href="https://github.com/subina01/ML-programs" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
 
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+            <div class="project-card">
+                <span class="project-number">06</span>
+                <h3 class="project-title">OOP Principles Demos</h3>
+                <p class="project-description">
+                    Comprehensive demonstrations of Object-Oriented Programming concepts including inheritance and polymorphism.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">.NET</span>
+                </div>
+                <a href="https://github.com/subina01/OOP-Principles-Demos" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
 
-      <!--=============== INDEX JS ===============-->
-      <script src="assets/js/index.js"></script>
-   </body>
+            <div class="project-card">
+                <span class="project-number">07</span>
+                <h3 class="project-title">CRUD Operations</h3>
+                <p class="project-description">
+                    Full-featured CRUD application with database integration and RESTful API implementation.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ASP.NET</span>
+                    <span class="tech-tag">Web API</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+                <a href="https://github.com/subina01/CRUDOperation" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">08</span>
+                <h3 class="project-title">Todo Application</h3>
+                <p class="project-description">
+                    Modern task management app with intuitive UI and full CRUD functionality for organizing daily tasks.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">ASP.NET</span>
+                    <span class="tech-tag">WebAPI</span>
+                    <span class="tech-tag">SQL Server</span>
+                </div>
+                <a href="https://github.com/subina01/Todo-App" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project-card">
+                <span class="project-number">09</span>
+                <h3 class="project-title">ATM Application</h3>
+                <p class="project-description">
+                    Console-based ATM simulation with banking operations, transaction management, and account handling.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">Console App</span>
+                </div>
+                <a href="https://github.com/subina01/ATMApp" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+        </div>
+         <div class="project-card">
+                <span class="project-number">10</span>
+                <h3 class="project-title">Vehicle Rental System API</h3>
+                <p class="project-description">
+                        Created a fully functional Web API for renting Vehicles.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">API</span>
+                </div>
+                <a href="https://github.com/subina01/Project-API" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+            <div class="project-card">
+                <span class="project-number">11</span>
+                <h3 class="project-title">TaskManagement Application API</h3>
+                <p class="project-description">
+                        Created a fully functional Web API for Managing tasks.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">Clean Architecture</span>
+                    <span class="tech-tag">Repository and UnitOfWork Design Pattern</span>
+                </div>
+                <a href="https://github.com/subina01/FromBasicsToProjects_DotNet/tree/main/TaskManagement.API" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+            <div class="project-card">
+                <span class="project-number">12</span>
+                <h3 class="project-title">TaskManagement Application</h3>
+                <p class="project-description">
+                        Created a fully functional Web API for Managing tasks.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">MVC</span>
+                    <span class="tech-tag">Clean Architecture</span>
+                    <span class="tech-tag">Repository and UnitOfWork Design Pattern</span>
+                </div>
+                <a href="https://github.com/subina01/FromBasicsToProjects_DotNet/tree/main/TaskManagement.MVC" target="_blank" class="project-link">
+                    View Project →
+                </a>
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-label">Expertise</span>
+            <h2><span class="gradient-text">Technical Skills</span></h2>
+            <p class="section-description">Technologies and tools I use to build robust solutions</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend Development</h3>
+                <div class="skill-items">
+                    <span class="skill-item">ASP.NET Core</span>
+                    <span class="skill-item">C#</span>
+                    <span class="skill-item">FastAPI</span>
+                    <span class="skill-item">RESTful APIs</span>
+                    <span class="skill-item">ASP.NET Web API</span>
+                    <span class="skill-item">ASP.NET MVC (Model–View–Controller)</span>
+                    <span class="skill-item">Windows Forms (WinForms)</span>
+                    <span class="skill-item">ASP.NET Razor Pages</span>
+                    <span class="skill-item">Console Applications</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💾</div>
+                <h3>Database & ORM</h3>
+                <div class="skill-items">
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">SQL Server</span>
+                    <span class="skill-item">SQLModel</span>
+                    <span class="skill-item">Entity Framework</span>
+                    <span class="skill-item">Database Design</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🏗️</div>
+                <h3>Architecture & Patterns</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Clean Architecture</span>
+                    <span class="skill-item">SOLID Principles</span>
+                    <span class="skill-item">Design Patterns</span>
+                    <span class="skill-item">OOP</span>
+                    <span class="skill-item">Modular Design</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Frontend & Web</h3>
+                <div class="skill-items">
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">HTML5</span>
+                    <span class="skill-item">CSS3</span>
+                    <span class="skill-item">Responsive Design</span>
+                    <span class="skill-item">Web Development</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3>Data Science & ML</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Machine Learning</span>
+                    <span class="skill-item">Data Analysis</span>
+                    <span class="skill-item">Python Libraries</span>
+                    <span class="skill-item">Data Visualization</span>
+                    <span class="skill-item">Predictive Models</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Tools & Workflow</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Git</span>
+                    <span class="skill-item">GitHub</span>
+                    <span class="skill-item">GitLab</span>
+                    <span class="skill-item">Agile</span>
+                    <span class="skill-item">Version Control</span>
+                    <span class="skill-item">Clean Architecture</span>
+                    <span class="skill-item">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-label">Let's Talk</span>
+            <h2><span class="gradient-text">Get In Touch</span></h2>
+            <p class="section-description">
+                I'm always open to discussing new projects, creative ideas, or opportunities to contribute to your vision. 
+                Let's build something amazing together!
+            </p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-links">
+                <a href="https://github.com/subina01" target="_blank" class="contact-link">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="mailto:subinadhakal01@gmail.com" class="contact-link">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+                    </svg>
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/subinadhakal01/" target="_blank" class="contact-link">
+                    <svg class="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built with <span class="footer-heart">❤️</span> by Subina | © 2025 All Rights Reserved</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+    <script src="~/Index.js"></script>
+</body>
 </html>
