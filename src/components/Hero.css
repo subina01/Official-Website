@@ -1,0 +1,162 @@
+.hero {
+  padding: 10rem 0 6rem;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin-bottom: 1.75rem;
+}
+
+.hero__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.hero__headline {
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+  line-height: 1.15;
+  max-width: 620px;
+}
+
+.hero__accent {
+  color: var(--accent);
+}
+
+.hero__desc {
+  max-width: 560px;
+  color: var(--text-soft);
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin-top: 1.5rem;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.94rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn--solid {
+  background: var(--accent);
+  color: #1a1305;
+}
+
+.btn--solid:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn--outline {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.btn--outline:hover {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-diagram {
+  width: 100%;
+  max-width: 460px;
+}
+
+.node-box {
+  fill: var(--bg-elevated);
+  stroke: var(--border-strong);
+  stroke-width: 1.2;
+}
+
+.node-box--accent {
+  stroke: var(--accent-line);
+}
+
+.node-title {
+  fill: var(--text);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.node-sub {
+  fill: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.tenant-chip {
+  fill: var(--accent-soft);
+  stroke: var(--accent-line);
+  stroke-width: 1;
+}
+
+.flow-line {
+  stroke-dasharray: 5 4;
+  animation: flow 2.2s linear infinite;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -18;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-line {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .hero-diagram {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 7.5rem 0 3.5rem;
+  }
+}

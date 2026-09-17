@@ -1,0 +1,124 @@
+.proj-group-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin: 3rem 0 1.25rem;
+}
+
+.proj-group-title:first-of-type {
+  margin-top: 0;
+}
+
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.proj-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  overflow: hidden;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+  display: flex;
+}
+
+.proj-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
+}
+
+.proj-card__spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle 220px at var(--mx, 50%) var(--my, 50%), var(--spotlight), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.proj-card:hover .proj-card__spotlight {
+  opacity: 1;
+}
+
+.proj-card__content {
+  position: relative;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.proj-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.proj-card__name {
+  font-size: 1.12rem;
+}
+
+.proj-card__desc {
+  color: var(--text-soft);
+  font-size: 0.93rem;
+  line-height: 1.7;
+  margin-bottom: 1.15rem;
+}
+
+.proj-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.1rem;
+}
+
+.proj-card__stack li {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+}
+
+.proj-card__note {
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+.proj-card__link {
+  margin-top: auto;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--accent);
+  align-self: flex-start;
+}
+
+.proj-card__link:hover {
+  text-decoration: underline;
+}
+
+.proj-more {
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  line-height: 1.9;
+}
+
+.proj-more a {
+  color: var(--text-soft);
+  border-bottom: 1px solid var(--border-strong);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.proj-more a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
